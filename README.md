@@ -7,15 +7,13 @@
 
 - 🔭 I’m currently working on [a book](https://github.com/astrotrain55/Master100pages)
 
-- 🌱 I’m currently learning **Docker**
-
 - 🤝 I’m looking for help with [vue-bitrix24](https://github.com/astrotrain55/vue-bitrix24)
+
+- 🌱 I’m currently learning **Docker**
 
 - 👨‍💻 All of my projects are available at [https://zvalentin.ru/portfolio/](https://zvalentin.ru/portfolio/)
 
-- 📫 How to reach me **astrotrain55@gmail.com**
-
-- 📄 Know about my experiences [https://docs.google.com/document/d/1NY0j4b9eIiQj1jkc6DWsZHeM6wvtKfgtguyZQU-Iob8/](https://docs.google.com/document/d/1NY0j4b9eIiQj1jkc6DWsZHeM6wvtKfgtguyZQU-Iob8/)
+- 📄 Know about my [experiences](https://docs.google.com/document/d/1NY0j4b9eIiQj1jkc6DWsZHeM6wvtKfgtguyZQU-Iob8/)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
