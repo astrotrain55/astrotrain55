@@ -1,0 +1,64 @@
+<div data-widget="pagination" data-name="Пагинация">
+  <style>
+    [data-type="x-widget-template"] {
+      font-family: sans-serif;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      padding: 10px 20px;
+      background-color: #222;
+      border-bottom-right-radius: 10px;
+      transition: all .3s ease;
+      transform: translate(-100%,0);
+    }
+    [data-type="x-widget-template"]:after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 24px;
+      height: 24px;
+      background-color: #222;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAAAxQTFRF////////AAAA////BQBkwgAAAAN0Uk5TxMMAjAd+zwAAACNJREFUCNdjqP///y/DfyBg+LVq1Xoo8W8/CkFYAmwA0Kg/AFcANT5fe7l4AAAAAElFTkSuQmCC);
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+    [data-type="x-widget-template"]:hover {
+      transform: translate(0,0);
+    }
+    [data-type="x-widget-template"] ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    [data-type="x-widget-template"] li:not(:first-child) {
+      padding: 10px 0 0;
+    }
+    [data-type="x-widget-template"] a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    [data-type="x-widget-template"] a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    const pageList = [
+      {
+        "title": "Тестовая страница",
+        "name": "test",
+      },
+    ];
+    const menu = pageList.reduce((total, item) => total += `<li><a href="${item.name}.html">${item.title}</a></li>`, '');
+    const markup = `
+      <div data-type="x-widget-template">
+        <ul>
+          ${menu}
+        </ul>
+      </div>`;
+    document.currentScript.insertAdjacentHTML('beforebegin', markup);
+  </script>
+</div>
