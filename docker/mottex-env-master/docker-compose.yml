@@ -1,0 +1,94 @@
+version: "3.9"
+services:
+#  runner:
+#    build: 
+  nginx:
+    build: ./docker/nginx/
+    container_name: ${PROJECT}_nginx
+    volumes:
+      - ./conf/nginx/:/etc/nginx
+      - ${ROOT_DIR}:/data/www:rw
+    depends_on:
+      - php
+    networks:
+      - frontend
+      - backend
+  php:
+    build: ./docker/php81-fpm/
+    container_name: ${PROJECT}_php
+    volumes:
+      - ${ROOT_DIR}:/data/www:rw
+    depends_on:
+      - redis
+      - db
+    networks:
+      - backend
+  adminer:
+    image: adminer
+    container_name: ${PROJECT}_adminer
+    restart: always
+    networks:
+      - frontend
+      - backend
+  redis:
+     image: "redis:alpine"
+     container_name: ${PROJECT}_redis
+     environment:
+       - REDIS_REPLICATION_MODE=master
+     networks:
+       - backend
+  db:
+    image: mariadb
+    container_name: ${PROJECT}_db
+    restart: always
+    volumes:
+      - '${MARIADB_HOME}/data:/var/lib/mysql'
+      - '${MARIADB_HOME}/config:/etc/mysql'
+    environment:
+      MYSQL_ROOT_PASSWORD: 1PerspektivA11!@#
+      MYSQL_DATABASE: mottex_db_${PROJECT} 
+      MYSQL_USER: mottex_user
+      MYSQL_PASSWORD: Uws9svAMyJ62TNk
+    networks:
+      - backend
+
+  es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.0.0-rc1
+    container_name: ${PROJECT}_es
+    environment:
+      - node.name=es01
+#      - cluster.name=es-docker-cluster
+#      - discovery.seed_hosts=es02,es03
+#      - cluster.initial_master_nodes=es01,es02,es03
+#      - bootstrap.memory_lock=true
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - ${ES_HOME}:/usr/share/elasticsearch/data:rw
+    depends_on:
+      - db
+    networks:
+      - backend
+  gitlab-runner:
+    build: ./docker/gitlab-runner/
+    container_name: ${PROJECT}_gitlab_runner
+    environment:
+      - TOKEN=tfQ4nEA9DdpKS_nLUssr
+      - URL=http://gitlab.mottex.ru:443/
+      - TAG=dev
+    volumes:
+      - ${ROOT_DIR}:/data/www:rw
+      - ${HOME_DIR}/cache:/cache:rw
+    depends_on:
+      - php
+    networks:
+     - backend
+networks:
+    frontend:
+      external: true
+    backend:
+      name: backend_${PROJECT}
