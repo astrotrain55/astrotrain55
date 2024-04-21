@@ -2,25 +2,25 @@
 <h3 align="center">A frontend developer from Russia</h3>
 <p align="center">
   <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noreferrer">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webstorm/webstorm-original.svg" alt="webstorm" width="40" height="40"/>
+    <img src="https://www.svgrepo.com/show/354555/webstorm.svg" alt="webstorm" width="40" height="40"/>
   </a>
   <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
+    <img src="https://www.svgrepo.com/show/303600/typescript-logo.svg" alt="typescript" width="40" height="40"/>
   </a>
   <a href="https://angular.io/" target="_blank" rel="noreferrer">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="angular" width="40" height="40"/>
+    <img src="https://www.svgrepo.com/show/353396/angular-icon.svg" alt="angular" width="40" height="40"/>
   </a>
   <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
+    <img src="https://www.svgrepo.com/show/354004/linux-tux.svg" alt="linux" width="40" height="40"/>
   </a>
   <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="vuejs" width="40" height="40"/>
+    <img src="https://www.svgrepo.com/show/354528/vue.svg" alt="vuejs" width="40" height="40"/>
   </a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+    <img src="https://www.svgrepo.com/show/353925/javascript.svg" alt="javascript" width="40" height="40"/>
   </a>
   <a href="https://storybook.js.org/" target="_blank" rel="noreferrer">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg" alt="storybook" width="40" height="40"/>
+    <img src="https://www.svgrepo.com/show/354397/storybook-icon.svg" alt="storybook" width="40" height="40"/>
   </a>
 </p>
 
@@ -32,7 +32,7 @@
 
 - 👨‍💻 All of my projects are available at [https://www.npmjs.com/~astrotrain](https://www.npmjs.com/~astrotrain)
 
-- 📄 Know about my [experiences](https://docs.google.com/document/d/1NY0j4b9eIiQj1jkc6DWsZHeM6wvtKfgtguyZQU-Iob8/)
+- 📄 Know about my [experiences](https://astrotrain55.github.io/portfolio/)
 
 - 🔭 I’m currently working on [a book](https://github.com/astrotrain55/Master100pages)
 
